@@ -2,13 +2,13 @@
 const weather = require("weather-js");
 
 // Creates a UserSearch Constructor
-const UserSearch = function(name, location) {
+const UserSearch = function (name, location) {
   this.name = name;
   this.location = location;
   this.date = Date.Now();
 
-  this.getWeather = function() {
-    weather.search({ search: this.location, degreeType: "F" }, function(err, result) {
+  this.getWeather = function () {
+    weather.find({ search: this.location, degreeType: "F" }, function (err, result) {
       if (err) {
         console.log(err);
       }
