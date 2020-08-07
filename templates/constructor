@@ -1,0 +1,22 @@
+// constructor function which can take in a series of values and create objects
+// with the properties contained inside
+function Character(name, profession, gender, age, strength, hitpoints) {
+  this.name = name;
+  this.profession = profession;
+  this.gender = gender;
+  this.age = age;
+  this.strength = strength;
+  this.hitpoints = hitpoints;
+
+} 
+ // method which prints all of the stats for a character
+Character.prototype.printStats = function() {
+  console.log(`Name: ${this.name}
+  Profession: ${this.profession}
+  Gender: ${this.gender}
+  Age: ${this.age}
+  Strength: ${this.strength}
+  HitPoints: ${this.hitpoints}
+  -------------
+  `);
+};
