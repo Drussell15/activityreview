@@ -22,13 +22,12 @@ DigitalPal.prototype.feed = function () {
 //method to put asleep when sleepy,increase age by1 set to bored.
 
 DigitalPal.prototype.sleep = fuction() {
-  if * this.sleepy) {
+  if (this.sleepy) {
     console.log("ZZZZzzzZZZZzzzz");
     this.sleepy = false;
     this.bored = true;
     this.increaseAge();
-  }
-  else {
+  } else {
     console.log("No, I want to play!");
   }
 };
@@ -51,11 +50,11 @@ DigitalPal.prototype.destroyfurnature = function () {
   if (this.houseQuality - 10 > 0) {
     this.houseQuality -= 10;
     this.bored = false;
-    this sleepy = true;
+    this.sleepy = true;
     console.log("destroy all the furnature!");
   }
   else {
-    console.log(("Ive destroyed everything!!");
+    console.log("Ive destroyed everything!!");
   }
 };
 // adds the "buyNewFurniture" method to the prototype which increases the "animals.cat.houseQuality" value by fifty
