@@ -21,7 +21,7 @@ DigitalPal.prototype.feed = function () {
 
 //method to put asleep when sleepy,increase age by1 set to bored.
 
-DigitalPal.prototype.sleep = fuction() {
+DigitalPal.prototype.sleep = function () {
   if (this.sleepy) {
     console.log("ZZZZzzzZZZZzzzz");
     this.sleepy = false;
