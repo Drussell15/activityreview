@@ -45,4 +45,18 @@ DigitalPal.prototype.play = function () {
     console.log("not right now, maybe later?");
   }
 };
+// add destroy furnature method
+
+DigitalPal.prototype.destroyfurnature = function () {
+  if (this.houseQuality - 10 > 0) {
+    this.houseQuality -= 10;
+    this.bored = false;
+    this sleepy = true;
+    console.log("destroy all the furnature!");
+  }
+  else {
+    console.log(("Ive destroyed everything!!");
+  }
+};
+
 
